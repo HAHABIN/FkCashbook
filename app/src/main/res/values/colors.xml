@@ -3,6 +3,14 @@
     <color name="colorPrimary">#1cbdd1</color>
     <color name="colorPrimaryDark">#1cbdd1</color>
     <color name="colorAccent">#48dcd9</color>
+    <color name="colorBackground">#fdfafa</color>
     <!--文字颜色-->
     <color name="textWhite">#FFFFFF</color>
+    <color name="textWhite2">#1cbdd1</color>
+    <color name="textBrown">#6A4A57</color>
+    <color name="textblue">#1cbdd1</color>
+    <color name="textgrey">#515151</color>
+    <color name="textred">#FF5050</color>
+
+
 </resources>

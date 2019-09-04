@@ -7,12 +7,16 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
-    <style name="LunchTheme" parent="Theme.AppCompat">
+
+    <style name="LunchTheme" parent="Theme.AppCompat.NoActionBar">
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowFullscreen">true</item>
         <!--下面这句如果你加上觉得好看就加，不好看就不加咯-->
-        <item name="android:navigationBarColor" tools:targetApi="lollipop">@android:color/transparent</item>
-        <item name="android:statusBarColor" tools:targetApi="lollipop">@android:color/transparent</item>
+        <item name="android:navigationBarColor" tools:targetApi="lollipop">
+            @android:color/transparent
+        </item>
+        <item name="android:statusBarColor" tools:targetApi="lollipop">@android:color/transparent
+        </item>
         <item name="android:windowBackground">@drawable/ic_logo</item>
     </style>
     <!--按钮样式-->
@@ -21,9 +25,41 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textSize">14sp</item>
     </style>
+
     <style name="Button.Default">
         <item name="android:textColor">@color/textWhite</item>
         <item name="android:background">@drawable/bg_button_default</item>
         <!--<item name="com.github.airsaid.accountbook:backgroundTint">?attr/colorAccent</item>-->
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!--TabLayout_Style底部导航
+    1.tabIndicatorColor：TabLayout指示器的颜色
+    2.tabTextColor: tab默认字体的颜色
+    3.tabSelectedTextColor：当前选择的tab的字体颜色
+    4.tabBackground：背景
+    5.tabIndicatorHeight：TabLayout指示器高度
+    -->
+    <style name="TabLayout_Style" parent="Widget.Design.TabLayout" >
+        <item name="tabIndicatorColor">@color/textblue</item>
+        <item name="tabTextColor">@color/textWhite</item>
+        <item name="tabSelectedTextColor">@color/textblue</item>
+        <item name="tabBackground">@color/colorBackground</item>
+        <item name="tabIndicatorHeight">0dp</item>
+    </style>
+    <!--水平装饰线-->
+    <style name="horizontal_decoration_style">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">1px</item>
+    <item name="android:background">#999999</item>
+    </style>
+    <!--竖直装饰线-->
+    <style name="vertical_decoration_style">
+        <item name="android:layout_width">1px</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">#999999</item>
     </style>
 </resources>

@@ -4,6 +4,7 @@
 
     <item
         android:id="@+id/toolbar_date"
+        android:layout_height="match_parent"
         android:icon="@mipmap/ic_toolbar_date"
         android:orderInCategory="100"
         android:title="日历"

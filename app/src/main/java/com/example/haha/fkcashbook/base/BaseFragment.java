@@ -9,6 +9,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.haha.fkcashbook.MyApplication;
+import com.example.haha.fkcashbook.model.bean.LocalRepository;
+
 import butterknife.ButterKnife;
 import butterknife.Unbinder;
 
@@ -44,6 +47,7 @@ public abstract class BaseFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
         mUnBinder = ButterKnife.bind(this, view);
         initEventAndData();
+        initClick();
     }
 
     @Override
@@ -51,7 +55,29 @@ public abstract class BaseFragment extends Fragment {
         super.onDestroyView();
         mUnBinder.unbind();
     }
+    protected LocalRepository getLocalRepository(){
+        return MyApplication.getLocalRepository();
+    }
+    protected void initData(Bundle savedInstanceState){
+    }
 
+    /**
+     * 初始化点击事件
+     */
+    protected void initClick(){
+    }
+
+    /**
+     * 逻辑使用区
+     */
+    protected void processLogic(){
+    }
+
+    /**
+     * 初始化零件
+     */
+    protected void initWidget(Bundle savedInstanceState){
+    }
     protected abstract int getLayoutId();
     protected abstract void initEventAndData();
 }
